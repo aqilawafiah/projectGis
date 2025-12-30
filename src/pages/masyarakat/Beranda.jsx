@@ -1,9 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // ⬅️ TAMBAHKAN
 import MasyarakatLayout from "../../layouts/masyarakat/MasyarakatLayout";
 import hero from "../../assets/hero.png";
 import "../../layouts/masyarakat/masyarakat.css";
 
 const Beranda = () => {
+  const navigate = useNavigate(); // ⬅️ INISIALISASI
+
   return (
     <MasyarakatLayout>
       <section className="hero-wrapper">
@@ -15,10 +18,18 @@ const Beranda = () => {
             </h1>
 
             <p>
-              Waspadai genangan air yang ada di sekitar wilayah lingkungan tempat tinggal Anda, sebagai langkah awal untuk mengantisipasi potensi banjir dan dampak buruk yang dapat ditimbulkannya.
+              Waspadai genangan air yang ada di sekitar wilayah lingkungan tempat
+              tinggal Anda, sebagai langkah awal untuk mengantisipasi potensi
+              banjir dan dampak buruk yang dapat ditimbulkannya.
             </p>
 
-            <button className="btn-masuk">Masuk</button>
+            {/* BUTTON MASUK */}
+            <button
+              className="btn-masuk"
+              onClick={() => navigate("/login")} // ⬅️ PINDAH KE LOGIN
+            >
+              Masuk
+            </button>
           </div>
 
           {/* KANAN */}

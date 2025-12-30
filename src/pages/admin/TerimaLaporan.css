@@ -1,0 +1,103 @@
+/* PAGE */
+.terima-page {
+  min-height: 100vh;
+  background-image: url("../../assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  height: 72px;
+  background-color: #6aa6ab;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+}
+
+.nav-right {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* TITLE */
+.page-title {
+  text-align: center;
+  margin: 25px 0;
+  font-size: 26px;
+  color: #7b7b7b;
+}
+
+/* CONTENT CENTER */
+.terima-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* CARD */
+.card {
+  width: 90%;
+  max-width: 1000px;
+  min-height: 380px;
+  background: rgba(238, 247, 248, 0.8);
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+/* STATUS TITLE */
+.status-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7a7a7a;
+  margin-bottom: 40px;
+}
+
+/* SUCCESS MESSAGE */
+.success-message {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 100px 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* BUTTON */
+.btn-kembali {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  max-width: 420px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5fa2a6;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-kembali:hover {
+  background-color: #4f8f93;
+}
