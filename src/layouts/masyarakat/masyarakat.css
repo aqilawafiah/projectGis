@@ -1,0 +1,627 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  height: 72px;
+  background-color: #6aa6ab;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 36px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbar-right a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* ================= HERO ================= */
+.hero-wrapper {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* BACKGROUND FOTO */
+  background-image: url("../../assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* CARD */
+.hero-card {
+  width: 90%;
+  height: 700px;
+  background: linear-gradient(120deg, #e9f5f6, #eef7fb);
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ---------- KIRI ---------- */
+.hero-content {
+  width: 50%;
+  padding-left: 130px; /* bikin teks agak ke tengah */
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  font-weight: 850;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: 2;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.btn-masuk {
+  background-color: #5b9ea4;
+  color: #fff;
+  border: none;
+  padding: 17px 38px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-masuk:hover {
+  background-color: #4a8b91;
+}
+
+/* ---------- KANAN ---------- */
+.hero-image {
+  width: 50%;
+  height: 100%;
+
+  /* bikin gambar nempel pas */
+  overflow: hidden;
+
+  /* sudut kanan mengikuti card */
+  border-top-right-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ================= TENTANG ================= */
+
+/* HEADER */
+.tentang-header {
+  padding: 170px 0;
+  text-align: center;
+
+  background-image: url("../../assets/bgtentang.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* OVERLAY */
+.tentang-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+}
+
+/* TITLE */
+.tentang-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* WRAPPER */
+.tentang-wrapper {
+  background-color: #eef6f7;
+  padding: 40px 80px;
+}
+
+/* CARD */
+.tentang-card {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE */
+.tentang-image {
+  padding: 50px;
+}
+
+.tentang-image img {
+  width: 300px;
+}
+
+/* CONTENT */
+.tentang-content {
+  background-color: #dcecef;
+  padding: 90px;
+  border-radius: 18px;
+}
+
+.tentang-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tentang-content p {
+  font-size: 16px;
+  line-height: 2;
+  text-align: justify;
+}
+
+/* ================= KONTAK ================= */
+
+/* HEADER */
+.kontak-header {
+  padding: 180px 0;
+  text-align: center;
+
+  background-image: url("../../assets/bgkontak.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.kontak-header h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* WRAPPER */
+.kontak-wrapper {
+  background-color: #f4fbfb;
+  padding: 80px 100px;
+}
+
+/* CARD CONTAINER */
+.kontak-card-container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+/* CARD */
+.kontak-card {
+  background-color: #ffffff;
+  border-radius: 22px;
+  padding: 35px 30px;
+  width: 280px;
+  text-align: center;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kontak-card img {
+  width: 48px;
+  margin-bottom: 20px;
+}
+
+.kontak-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.kontak-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ================= FORM KONTAK ================= */
+
+.kontak-form-section {
+  background-image: url("../../assets/map-bg.png"); /* background peta */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.kontak-desc {
+  font-size: 18px;
+  margin: 0 auto 30px auto;
+  color: #333;
+  text-align: center;
+  max-width: 1300px;
+  line-height: 1.6;
+}
+
+
+/* FORM */
+.kontak-form {
+  width: 850px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 35px;
+  border-radius: 20px;
+}
+
+/* ROW */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.kontak-form input,
+.kontak-form textarea {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.kontak-form textarea {
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.kontak-form button {
+  background-color: #6aa6ab;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.kontak-form button:hover {
+  background-color: #558e93;
+}
+
+/* MAP */
+.kontak-map {
+  width: 100%;
+  height: 600px;
+}
+
+.kontak-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter-section {
+  background-color: #f1fbfb;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.newsletter-section p {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 16px 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 0 40px;
+  background-color: #5fa4a9;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #4c8f94;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+  background-color: #cfe6e6;
+  padding: 70px 80px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  font-size: 14px;
+  line-height: 2;
+  color: #333;
+}
+
+.footer-contact li {
+  margin-bottom: 6px;
+}
+
+/* ================= LAPOR ================= */
+
+.lapor-wrapper {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4fbfb;
+  padding: 60px 0;
+
+  background-image: url("../../assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.lapor-card {
+  width: 1500px;
+  background: rgba(207, 230, 230, 0.85);
+  border-radius: 25px;
+  padding: 70px 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.lapor-card h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #3a6f73;
+}
+
+.lapor-form {
+  width: 100%;
+}
+
+.lapor-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 22px;
+}
+
+.lapor-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lapor-field label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.lapor-field input {
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  font-size: 14px;
+}
+
+.lapor-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #6aa6ab;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lapor-btn:hover {
+  background-color: #558e93;
+}
+
+/* ================= STATUS LAPORAN ================= */
+
+.status-wrapper {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+
+  background-image: url("../../assets/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.status-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.status-card {
+  position: relative;
+  z-index: 1;
+  width: 900px;
+  background-color: rgba(207, 230, 230, 0.9);
+  border-radius: 25px;
+  padding: 50px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.status-card h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #3a6f73;
+}
+
+/* TABLE */
+.status-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 35px;
+}
+
+.status-table th,
+.status-table td {
+  border: 1px solid #b5d3d3;
+  padding: 14px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.status-table th {
+  background-color: #6aa6ab;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* BUTTON AKSI */
+.aksi-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-terima {
+  background-color: #4caf50;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-terima:hover {
+  background-color: #43a047;
+}
+
+.btn-tolak {
+  background-color: #f44336;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-tolak:hover {
+  background-color: #e53935;
+}
+
+/* KELUAR */
+.btn-keluar {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #6aa6ab;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.btn-keluar:hover {
+  background-color: #558e93;
+}
