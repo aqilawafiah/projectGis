@@ -33,7 +33,7 @@ const StatusLaporan = () => {
               {laporan.length === 0 ? (
                 <tr>
                   <td colSpan="4" style={{ textAlign: "center" }}>
-                    Belum ada laporan masuk
+                    Belum ada laporan yang masuk
                   </td>
                 </tr>
               ) : (
